@@ -4,7 +4,7 @@
 
 ### Government_Budget_Value
 library(readr)
-Government_Budget_Value <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_Government_Budget_Value.csv")
+Government_Budget_Value <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Government_Budget_Value.csv")
 View(Government_Budget_Value)
 
 Government_Budget_Value_dates <-as.Date(Government_Budget_Value$DateTime)
@@ -42,7 +42,7 @@ ggplot(data = Government_Budget_Value_dataframe, mapping = aes(x = Government_Bu
 
 ### CPI
 library(readr)
-CPI <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_CPI.csv")
+CPI <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_CPI.csv")
 View(CPI)
 
 CPI_dates <-as.Date(CPI$DateTime)
@@ -86,7 +86,7 @@ tab_model(lm_mod, pred.labels = c("Intercept", "Time", "Law", "Time after Law"),
 
 ### Government Spending
 library(readr)
-Government_Spending <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_Government_Spending.csv")
+Government_Spending <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Government_Spending.csv")
 View(Government_Spending)
 
 Government_Spending_dates <-as.Date(Government_Spending$DateTime)
@@ -132,7 +132,7 @@ tab_model(lm_mod_Government_Spending, pred.labels = c("Intercept", "Time", "Law"
 
 ### GDP growth rate
 library(readr)
-GDP <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_GDP_Growth_from_2016.csv")
+GDP <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_GDP_Growth_from_2016.csv")
 View(GDP)
 
 GDP_dates <-as.Date(GDP$DateTime)
@@ -176,7 +176,7 @@ tab_model(lm_mod_GDP, pred.labels = c("Intercept", "Time", "Law", "Time after La
 
 ###  Fiscal Expenditure
 library(readr)
-Fiscal_Expenditure <- read_csv("Desktop/ASemester/Thesis/2Data/2Data_Fiscal_Expenditure.csv")
+Fiscal_Expenditure <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Fiscal_Expenditure.csv")
 View(Fiscal_Expenditure)
 
 Fiscal_Expenditure_dates <-as.Date(Fiscal_Expenditure$DateTime)
@@ -215,7 +215,7 @@ ggplot(data = Fiscal_Expenditure_dataframe, mapping = aes(x = Fiscal_Expenditure
 
 ### Inflation
 library(readr)
-Inflation <- read_csv("Desktop/ASemester/Thesis/2Data/2Data_Inflation_rate.csv")
+Inflation <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Inflation_rate.csv")
 View(Inflation)
 
 Inflation_dates <-as.Date(Inflation$DateTime)
@@ -255,7 +255,7 @@ ggplot(data = Inflation_dataframe, mapping = aes(x = Inflation_dates, y = Inflat
 
 ### Unemployment rate
 library(readr)
-Unemployment <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_Unemployment_rate.csv")
+Unemployment <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Unemployment_rate.csv")
 View(Unemployment)
 
 Unemployment_dates <-as.Date(Unemployment$DateTime)
@@ -302,7 +302,7 @@ tab_model(lm_mod_Unemployment, pred.labels = c("Intercept", "Time", "Law", "Time
 
 ### M0
 library(readr)
-M0 <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_M0.csv")
+M0 <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_M0.csv")
 View(M0)
 
 M0_dates <-as.Date(M0$DateTime)
@@ -349,7 +349,7 @@ tab_model(lm_mod_M0, pred.labels = c("Intercept", "Time", "Law", "Time after Law
 
 ### M1
 library(readr)
-M1 <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_M1.csv")
+M1 <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_M1.csv")
 View(M1)
 
 M1_dates <-as.Date(M1$DateTime)
@@ -394,7 +394,7 @@ tab_model(lm_mod_M1, pred.labels = c("Intercept", "Time", "Law", "Time after Law
 
 ### M2
 library(readr)
-M2 <- read_csv("~/Desktop/ASemester/Thesis/2Data/2Data_M2.csv")
+M2 <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_M2.csv")
 View(M2)
 
 M2_dates <-as.Date(M2$DateTime)
@@ -439,7 +439,7 @@ tab_model(lm_mod_M2, pred.labels = c("Intercept", "Time", "Law", "Time after Law
 ### Diff in Diff Uruguay vs Argentina
 
 library(readr)
-Diff_in_diff <- read_csv("~/Desktop/Diff_in_diff_arg_vs_uru_GBV_Placebo.csv")
+Diff_in_diff <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/Diff_in_diff_arg_vs_uru_GBV_Placebo.csv")
 View(Diff_in_diff)
 
 Diff_in_diff_dates <-as.Date(Diff_in_diff$DateTime)
@@ -502,7 +502,7 @@ stargazer(Diff_in_diff,type = "text",se = list(robust_se))
 
 
 library(readr)
-Diff_in_diff_GS <- read_csv("~/Desktop/2Data_diffindiff_Government_Spending_arg_vs_uru_Placebo.csv")
+Diff_in_diff_GS <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Government_Spending_arg_vs_uru.csv")
 View(Diff_in_diff_GS)
 
 Diff_in_diff_GS_dates <-as.Date(Diff_in_diff_GS$DateTime)
@@ -544,7 +544,7 @@ ggplot(data = Diff_in_diff_GS_dataframe, mapping = aes(x = Diff_in_diff_GS_dates
 
 
 library(readr)
-Diff_in_diff_CPI <- read_csv("~/Desktop/2Data_Diffindiff_CPI_arg_vs_uru_Placebo.csv")
+Diff_in_diff_CPI <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Diffindiff_CPI_arg_vs_uru.csv")
 View(Diff_in_diff_CPI)
 
 Diff_in_diff_CPI_dates <-as.Date(Diff_in_diff_CPI$DateTime)
@@ -586,7 +586,7 @@ Diff_in_diff_GDP_Growth_from_2016
 ### GDP Growth
 
 library(readr)
-Diff_in_diff_GDP <- read_csv("~/Desktop/Diff_in_diff_GDP_Growth_from_2016_Placebo.csv")
+Diff_in_diff_GDP <- read_csv("https://github.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/blob/main/Data/Diff_in_diff_GDP_Growth_from_2016.csv")
 View(Diff_in_diff_GDP)
 
 Diff_in_diff_GDP_dates <-as.Date(Diff_in_diff_GDP$DateTime)
@@ -625,7 +625,7 @@ ggplot(data = Diff_in_diff_GDP_dataframe, mapping = aes(x = Diff_in_diff_GDP_dat
 ####
 
 library(readr)
-Diff_in_diff_GDP <- read_csv("~/Desktop/Diff_in_diff_GDP_Growth_from_2016_Placebo.csv")
+Diff_in_diff_GDP <- read_csv("https://github.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/blob/main/Data/Diff_in_diff_GDP_Growth_from_2016_Placebo.csv")
 View(Diff_in_diff_GDP)
 
 Diff_in_diff_GDP_dates <-as.Date(Diff_in_diff_GDP$DateTime)
@@ -664,7 +664,7 @@ ggplot(data = Diff_in_diff_GDP_dataframe, mapping = aes(x = Diff_in_diff_GDP_dat
 
 ### Inflation
 library(readr)
-Inflation <- read_csv("Desktop/ASemester/Thesis/2Data/2Data_Inflation_rate.csv")
+Inflation <- read_csv("https://raw.githubusercontent.com/MartinFrancoIrabedra/Difference-in-difference-Macroec.-Uruguay/main/Data/2Data_Inflation_rate.csv")
 View(Inflation)
 
 Inflation_dates <-as.Date(Inflation$DateTime)
